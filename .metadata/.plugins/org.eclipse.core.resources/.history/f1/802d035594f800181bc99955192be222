@@ -1,0 +1,48 @@
+package civilWork;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Pupil pupil = new Pupil();
+		pupil.setName("ali");
+		pupil.setTcid(123);
+		
+		Engineer engineer = new Engineer();
+		engineer.setTcid(234);
+		engineer.setName("veli");
+		
+		Sef sef = new Sef();
+		sef.setName("hasan");
+		sef.setTcid(345);
+		
+		Usta usta = new Usta();
+		usta.setName("mehmet");
+		usta.setTcid(456);
+		
+		Pupil[] cirakArray = new Pupil[3];
+		
+		Pupil cirakIki = new Pupil();
+		cirakIki.setName("asd");
+		cirakIki.setTcid(567);
+		
+		Pupil cirakUc = new Pupil();
+		cirakUc.setName("ert");
+		cirakUc.setTcid(678);
+		
+		cirakArray[0] = pupil;
+		cirakArray[1] = cirakIki;
+		cirakArray[2] = cirakUc;
+		
+		PrintEmployeeInfos printEmployeeInfos = new PrintEmployeeInfos();
+		
+		printEmployeeInfos.bilgileriGetir(pupil);
+		printEmployeeInfos.bilgileriGetir(pupil, engineer);
+		printEmployeeInfos.bilgileriGetir(pupil, engineer, sef);
+		printEmployeeInfos.bilgileriGetir(pupil, engineer, sef, usta);
+		printEmployeeInfos.bilgileriGetir(cirakArray);
+		
+		
+		
+	}
+}

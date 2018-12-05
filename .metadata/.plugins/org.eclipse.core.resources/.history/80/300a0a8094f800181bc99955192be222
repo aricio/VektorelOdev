@@ -1,0 +1,59 @@
+package civilWork;
+
+public class PrintEmployeeInfos {
+	
+	public void bilgileriGetir(Pupil pupil){
+		
+		System.out.println("---tek parametre---");
+		System.out.println(pupil.getName());
+		System.out.println(pupil.getTcid());
+	}
+	
+	public void bilgileriGetir(Pupil pupil, Engineer engineer){
+		System.out.println("---iki parametre---");
+		System.out.println(pupil.getName());
+		System.out.println(pupil.getTcid());
+		System.out.println("----");
+		System.out.println(engineer.getName());
+		System.out.println(engineer.getTcid());
+
+	}
+	
+	public void bilgileriGetir(Pupil pupil, Engineer engineer, Chief chief){
+		System.out.println("---Üç parametre---");
+		System.out.println(pupil.getName());
+		System.out.println(pupil.getTcid());
+		System.out.println("----");
+		System.out.println(engineer.getName());
+		System.out.println(engineer.getTcid());
+		System.out.println("----");
+		System.out.println(chief.getName());
+		System.out.println(chief.getTcid());
+	}
+	
+	public void bilgileriGetir(Pupil pupil, Engineer engineer, Chief chief, Foreman foreman){
+		System.out.println("---dört parametre---");
+		System.out.println(pupil.getName());
+		System.out.println(pupil.getTcid());
+		System.out.println("----");
+		System.out.println(engineer.getName());
+		System.out.println(engineer.getTcid());
+		System.out.println("----");
+		System.out.println(chief.getName());
+		System.out.println(chief.getTcid());
+		System.out.println("----");
+		System.out.println(foreman.getName());
+		System.out.println(foreman.getTcid());
+	}
+	
+	public void bilgileriGetir(Pupil[] cirakArray){
+		System.out.println("--- class array ---");
+		
+		for(int i = 0 ; i < cirakArray.length ; i++){
+			System.out.println(cirakArray[i].getName());
+			System.out.println(cirakArray[i].getTcid());
+			System.out.println("----");
+		}
+	}
+
+}

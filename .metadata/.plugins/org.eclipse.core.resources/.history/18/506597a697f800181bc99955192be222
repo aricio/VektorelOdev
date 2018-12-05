@@ -1,0 +1,48 @@
+package civilWork;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Pupil pupil = new Pupil();
+		pupil.setName("ali");
+		pupil.setTcid(123);
+		
+		Engineer engineer = new Engineer();
+		engineer.setTcid(234);
+		engineer.setName("veli");
+		
+		Chief chief = new Chief();
+		chief.setName("hasan");
+		chief.setTcid(345);
+		
+		Foreman foreman = new Foreman();
+		foreman.setName("mehmet");
+		foreman.setTcid(456);
+		
+		Pupil[] cirakArray = new Pupil[3];
+		
+		Pupil cirakIki = new Pupil();
+		cirakIki.setName("asd");
+		cirakIki.setTcid(567);
+		
+		Pupil cirakUc = new Pupil();
+		cirakUc.setName("ert");
+		cirakUc.setTcid(678);
+		
+		cirakArray[0] = pupil;
+		cirakArray[1] = cirakIki;
+		cirakArray[2] = cirakUc;
+		
+		PrintEmployeeInfos printEmployeeInfos = new PrintEmployeeInfos();
+		
+		printEmployeeInfos.printInfo(pupil);
+		printEmployeeInfos.printInfo(pupil, engineer);
+		printEmployeeInfos.printInfo(pupil, engineer, chief);
+		printEmployeeInfos.printInfo(pupil, engineer, chief, foreman);
+		printEmployeeInfos.printInfo(cirakArray);
+		
+		
+		
+	}
+}

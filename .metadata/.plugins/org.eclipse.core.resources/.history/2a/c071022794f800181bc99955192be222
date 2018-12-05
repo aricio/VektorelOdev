@@ -1,0 +1,48 @@
+package civilWork;
+
+public class Islem {
+
+	public static void main(String[] args) {
+		
+		Cirak cirak = new Cirak();
+		cirak.setName("ali");
+		cirak.setTcid(123);
+		
+		Muhendis muhendis = new Muhendis();
+		muhendis.setTcid(234);
+		muhendis.setName("veli");
+		
+		Sef sef = new Sef();
+		sef.setName("hasan");
+		sef.setTcid(345);
+		
+		Usta usta = new Usta();
+		usta.setName("mehmet");
+		usta.setTcid(456);
+		
+		Cirak[] cirakArray = new Cirak[3];
+		
+		Cirak cirakIki = new Cirak();
+		cirakIki.setName("asd");
+		cirakIki.setTcid(567);
+		
+		Cirak cirakUc = new Cirak();
+		cirakUc.setName("ert");
+		cirakUc.setTcid(678);
+		
+		cirakArray[0] = cirak;
+		cirakArray[1] = cirakIki;
+		cirakArray[2] = cirakUc;
+		
+		PrintEmployeeInfos printEmployeeInfos = new PrintEmployeeInfos();
+		
+		printEmployeeInfos.bilgileriGetir(cirak);
+		printEmployeeInfos.bilgileriGetir(cirak, muhendis);
+		printEmployeeInfos.bilgileriGetir(cirak, muhendis, sef);
+		printEmployeeInfos.bilgileriGetir(cirak, muhendis, sef, usta);
+		printEmployeeInfos.bilgileriGetir(cirakArray);
+		
+		
+		
+	}
+}

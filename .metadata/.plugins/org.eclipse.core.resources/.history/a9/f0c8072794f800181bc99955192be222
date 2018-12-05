@@ -1,0 +1,59 @@
+package civilWork;
+
+public class PrintEmployeeInfos {
+	
+	public void bilgileriGetir(Cirak cirak){
+		
+		System.out.println("---tek parametre---");
+		System.out.println(cirak.getName());
+		System.out.println(cirak.getTcid());
+	}
+	
+	public void bilgileriGetir(Cirak cirak, Muhendis muhendis){
+		System.out.println("---iki parametre---");
+		System.out.println(cirak.getName());
+		System.out.println(cirak.getTcid());
+		System.out.println("----");
+		System.out.println(muhendis.getName());
+		System.out.println(muhendis.getTcid());
+
+	}
+	
+	public void bilgileriGetir(Cirak cirak, Muhendis muhendis, Sef sef){
+		System.out.println("---Üç parametre---");
+		System.out.println(cirak.getName());
+		System.out.println(cirak.getTcid());
+		System.out.println("----");
+		System.out.println(muhendis.getName());
+		System.out.println(muhendis.getTcid());
+		System.out.println("----");
+		System.out.println(sef.getName());
+		System.out.println(sef.getTcid());
+	}
+	
+	public void bilgileriGetir(Cirak cirak, Muhendis muhendis, Sef sef, Usta usta){
+		System.out.println("---dört parametre---");
+		System.out.println(cirak.getName());
+		System.out.println(cirak.getTcid());
+		System.out.println("----");
+		System.out.println(muhendis.getName());
+		System.out.println(muhendis.getTcid());
+		System.out.println("----");
+		System.out.println(sef.getName());
+		System.out.println(sef.getTcid());
+		System.out.println("----");
+		System.out.println(usta.getName());
+		System.out.println(usta.getTcid());
+	}
+	
+	public void bilgileriGetir(Cirak[] cirakArray){
+		System.out.println("--- class array ---");
+		
+		for(int i = 0 ; i < cirakArray.length ; i++){
+			System.out.println(cirakArray[i].getName());
+			System.out.println(cirakArray[i].getTcid());
+			System.out.println("----");
+		}
+	}
+
+}
