@@ -1,0 +1,44 @@
+package kalitimVeMaksimumArray;
+
+public class MatematikSýnýfý implements IArray,IDortIslem {
+
+	@Override
+	public int[] buSayiyaKadarKareBul(int sayi){
+		int[] sayilar = new int[sayi];		
+		int counter = 0 ;
+		for(int i = 0; i < sayi ; i++){
+			if(i*i < sayi){
+				
+				sayilar[counter] = i;
+				counter++;
+			}
+		}
+		return sayilar;
+	};
+	
+	
+
+	@Override
+	public int toplama(int a, int b) {
+		int sonuc = a+b;
+		return sonuc;
+	}
+
+	@Override
+	public int cikarma(int a, int b) {
+		int sonuc = a-b;
+		return sonuc;
+	}
+
+	@Override
+	public int arrayMinBul(int[] array) {
+		
+		int sonuc = array[0];
+		for(int i = 0 ; i < array.length ; i++){
+			if (sonuc > array[i]){
+				sonuc = array[i];
+			}
+		}
+		return sonuc;
+	}
+}

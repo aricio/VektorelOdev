@@ -1,0 +1,17 @@
+package kalitimVeMaksimumArray;
+
+public class Islem {
+
+	public static void main(String[] args) {
+		
+		int[][][] array = {{{1,2,3},{4,5,6},{7,8,9}},{{1,2,3},{4,5,6},{7,8,9}},{{1,2,3},{4,5,6},{7,8,9}}};
+		int arrayMaksimumDeger ;
+		
+		
+		AltSinif altsinif = new AltSinif();
+		
+		arrayMaksimumDeger = altsinif.makDegerBul(array);
+		System.out.println("Array maksimum deger = " + arrayMaksimumDeger);
+		
+	}
+}
