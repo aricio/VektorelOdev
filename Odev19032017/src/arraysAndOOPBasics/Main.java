@@ -1,0 +1,34 @@
+package arraysAndOOPBasics;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		int[][][] arrayInThreeDim = { { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } },
+				{ { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } }, { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } } };
+
+		ChildClass childClass = new ChildClass();
+		System.out.println(
+				"Max value in a three dimmensional array: " + childClass.findMaxValueInThreeDimArray(arrayInThreeDim));
+
+		int[] arrayInOneDim = { 4, 5, 6, 44, 2, 45, 3, 12, 99 };
+		int value1 = 3;
+		int value2 = 4;
+		int arbitraryNumber = 250;
+		int[] squareRootableNumbersUntilAGivenNumber;
+
+		MathClass mathClass = new MathClass();
+
+		System.out.println("Summation of two given number: " + mathClass.summation(value1, value2));
+		System.out.println("Substraction of two given number: " + mathClass.summation(value1, value2));
+		System.out.println("Minimum number in a one dimmensional array" + mathClass.findMinValueInOneDimArray(arrayInOneDim));
+		
+		
+		squareRootableNumbersUntilAGivenNumber = mathClass.findSquareRootableNumbersUntilAGivenNumber(arbitraryNumber);
+		System.out.println("Square rootable numbers in a given number: ");
+		for (int i : squareRootableNumbersUntilAGivenNumber) {
+			System.out.print(i + " ");
+		}
+		
+	}
+}

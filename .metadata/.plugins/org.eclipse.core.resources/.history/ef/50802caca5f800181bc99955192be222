@@ -1,0 +1,7 @@
+package arraysAndOOPBasics;
+
+public interface IFourOperations {
+
+	public int toplama(int a, int b);
+	public int cikarma(int a, int b);
+}

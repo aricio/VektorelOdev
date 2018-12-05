@@ -1,0 +1,9 @@
+package arraysAndOOPBasics;
+
+public class ChildClass extends AtaClass  {
+
+	
+	
+	
+
+}

@@ -1,0 +1,52 @@
+package arraysAndOOPBasics;
+
+public class MathClass implements IArray,IFourOperations {
+
+	@Override
+	public int[] findSquareRootableNumbersUntilAGivenNumber(int givenNumber){
+		int[] temporaryFoundNumbers = new int[givenNumber];	
+		int[] foundNumbers;
+		int counter = 0 ;
+		for(int i = 0; i < givenNumber ; i++){
+			if(i*i <= givenNumber){
+				
+				temporaryFoundNumbers[counter] = i;
+				counter++;
+			}else{
+				foundNumbers = new int [counter];
+				foundNumbers = temporaryFoundNumbers;
+			}
+		}
+		
+		
+		
+		
+		return null;
+	};
+	
+	
+
+	@Override
+	public int summation(int a, int b) {
+		int result = a+b;
+		return result;
+	}
+
+	@Override
+	public int subtraction(int a, int b) {
+		int result = a-b;
+		return result;
+	}
+
+	@Override
+	public int findMinValueInOneDimArray(int[] array) {
+		
+		int result = array[0];
+		for(int i = 0 ; i < array.length ; i++){
+			if (result > array[i]){
+				result = array[i];
+			}
+		}
+		return result;
+	}
+}
