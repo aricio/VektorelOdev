@@ -1,4 +1,4 @@
-# VektorelOdev
+# JavaCoursePractice
 Includes examples of basics of Java SE 
 
 - This repository is about the some stuides on Java SE basics such as constructing classes, 
